@@ -26,3 +26,34 @@ JWT_SECRET=your_jwt_secret
 
 # Start the application:
 npm start
+
+# file sructure 
+movie-booking-site/
+│
+├── controllers/
+│   ├── authController.js
+│   ├── adminController.js
+│   ├── movieController.js
+│   └── bookingController.js
+│
+├── middlewares/
+│   └── authMiddleware.js
+│
+├── models/
+│   ├── User.js
+│   ├── Admin.js
+│   ├── Movie.js
+│   └── Booking.js
+│
+├── routes/
+│   ├── auth.js
+│   ├── admin.js
+│   ├── movies.js
+│   └── bookings.js
+│
+├── .env
+├── .gitignore
+├── Dockerfile
+├── package.json
+├── app.js
+└── README.md
