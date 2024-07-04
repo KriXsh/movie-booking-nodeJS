@@ -27,6 +27,79 @@ JWT_SECRET=your_jwt_secret
 # Start the application:
 npm start
 
+# API Endpoints
+Auth
+Register:
+
+POST /api/auth/register
+Request Body:
+
+{
+  "name": "User Name",
+  "email": "user@example.com",
+  "password": "password"
+}
+
+# Login:
+
+POST /api/auth/login
+Request Body:
+{
+  "email": "user@example.com",
+  "password": "password"
+}
+
+# Admin
+Register:
+
+POST /api/admin/register
+Request Body:
+{
+  "name": "Admin Name",
+  "email": "admin@example.com",
+  "password": "password"
+}
+
+Login:
+POST /api/admin/login
+Request Body:
+{
+  "email": "admin@example.com",
+  "password": "password"
+}
+Movies
+Add Movie (Admin Only):
+
+POST /api/movies/add
+Request Body:
+{
+  "title": "Movie Title",
+  "description": "Movie Description",
+  "duration": 120,
+  "releaseDate": "2024-07-04"
+}
+
+# Requires Authorization header with Admin JWT token
+Get All Movies:
+
+GET /api/movies/
+Get Movie By ID:
+GET /api/movies/:id
+Bookings
+Book Movie:
+
+POST /api/bookings/book
+Request Body:
+{
+  "movieId": "movieId",
+  "seatNumber": "A1"
+}
+Requires Authorization header with User JWT token
+Get User Bookings:
+
+GET /api/bookings/user
+Requires Authorization header with User JWT token
+
 # file sructure 
 movie-booking-site/
 │
