@@ -4,7 +4,7 @@ This is a Node.js application for a movie booking site. Users can register, auth
 ## Features
 User registration and login
 Admin registration and login
-Book movies
+Book movies      
 Get user bookings
 Add movies (Admin only) 
 Get movie details  
