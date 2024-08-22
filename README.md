@@ -1,6 +1,6 @@
 ## Movie Booking Site
 This is a Node.js application for a movie booking site. Users can register, authenticate, book movies, and get details of the movies and their bookings. Admins can add movies and manage the site.
-
+     
 ## Features
 User registration and login
 Admin registration and login
