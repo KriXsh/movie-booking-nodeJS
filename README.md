@@ -7,7 +7,7 @@ Admin registration and login
 Book movies      
 Get user bookings
 Add movies (Admin only)             
-Get movie details           
+Get movie details               
 Prerequisites
 Node.js (version 16 or later)    
 MongoDB
